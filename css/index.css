@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.luck-box,
+.luck-setting {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  margin: 50px auto;
+}
+
+.luck-box {
+  position: relative;
+}
+
+.luck-setting {
+  height: 450px;
+  margin-top: 20px;
+}
+
+.luck-header {
+  height: 85px;
+  padding-left: 31px;
+}
+
+.luck-header h4 {
+  height: 50px;
+  line-height: 50px;
+  margin-left: -15px;
+}
+
+.luck-header .border {
+  border: 5px solid #fff;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+
+.luck-container {
+  width: 438px;
+  height: 348px;
+  background-color: red;
+  margin: 0 auto;
+  margin-top: 31px;
+  padding: 16px;
+}
+
+.luck-container .item,
+.luck-container .special {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 31%;
+  height: 31%;
+  margin: 0 3.33% 3% 0;
+  background-color: orange;
+  text-align: center;
+  color: #fff;
+}
+
+.luck-container .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.luck-container .item:nth-child(n+7) {
+  margin-bottom: 0;
+}
+
+.luck-setting .special,
+.luck-container .special {
+  background-color: skyblue;
+}
+
+.setting-header {
+  height: 30px;
+  padding-left: 31px;
+  padding-top: 7px;
+}
+
+.setting-header h4 {
+  height: 30px;
+  line-height: 30px;
+}
+
+.luck-setting .ipt {
+  width: 42%;
+  outline: none;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: transparent;
+  border-radius: 6px;
+  border-color: skyblue;
+}
+
+.luck-setting .item {
+  position: relative;
+  font-size: 20px;
+}
+
+.result {
+  position: absolute;
+  top: 100px;
+  left: -270px;
+  width: 200px;
+  height: 230px;
+  background-color: skyblue;
+  overflow: auto;
+}
+
+.result h4 {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.result li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  background: red;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  position: absolute;
+  top: 43px;
+  right: 8px;
+}
+
+.skyblue {
+  background-color: skyblue !important;
+}
