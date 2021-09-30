@@ -10,7 +10,7 @@ div {
 .luck-box,
 .luck-setting {
   width: 500px;
-  height: 500px;
+  height: 470px;
   background-color: pink;
   margin: 50px auto;
 }
@@ -25,7 +25,6 @@ div {
 }
 
 .luck-header {
-  height: 85px;
   padding-left: 31px;
 }
 
