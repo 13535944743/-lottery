@@ -78,6 +78,7 @@ div {
 .luck-setting .special,
 .luck-container .special {
   background-color: skyblue;
+  cursor: pointer;
 }
 
 .setting-header {
