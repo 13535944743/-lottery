@@ -2,7 +2,7 @@
  * 这个抽奖只支持概率最低可以设置到0.01%，通过概率相加等于1，把所有的概率*100，得到一个整数
  * 然后通过分段之后，再使用random()在[1, 10000]随机抽
  * 例子：默认概率设置都为12.5%
- * 所以[0, 1250)是sequence[0]的，[1250, 2500)是sequence[1]的, ... sequence是一个数组，用来按顺序存放转盘的数字(从起始点开始，顺时针)
+ * 所以[0, 1250)是sequence[0]的，[1250, 2500)是sequence[1]的, ... ,sequence是一个数组，用来按顺序存放转盘的数字(从起始点开始，顺时针)
  */
 
 const setting = document.querySelector(".luck-setting .special");
@@ -20,6 +20,11 @@ let timer = null;
 ipts.forEach((i) => {
   i.onchange = () => {
     i.value = i.value >= 0 ? i.value : 0; //使概率不会出现负数
+    // console.log(i.value.substring(i.value.indexOf('.') + 1));
+
+    if (i.value.substring(i.value.indexOf('.') + 1).length > 2) { //最小概率只支持0.01%
+      i.value = i.value.substring(0, 5);
+    }
   };
 });
 
