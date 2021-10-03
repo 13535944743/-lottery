@@ -70,7 +70,7 @@ start.addEventListener("click", () => {
     index++;
     if (index === sequence.length) {
       time += 50;
-      clearInterval(timer); //实现转速变慢，先清除之前的，在开新的定时器
+      clearInterval(timer); //实现转速变慢，先清除之前的，再开新的定时器
       timer = setInterval(count, time);
       index = 0; //转完一圈回到起始点
     }
