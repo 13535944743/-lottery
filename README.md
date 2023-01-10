@@ -3,7 +3,7 @@
 
 [抽奖地址](https://13535944743.github.io/lottery/)
 
-$\color{red}{test}$
+$\color{red}{test `$`}$
 
 **技术要点**：
 
