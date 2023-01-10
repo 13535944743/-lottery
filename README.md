@@ -3,6 +3,8 @@
 
 [抽奖地址](https://13535944743.github.io/lottery/)
 
+$\color{red}ElementPlus现在将`wrap$`属性名改成了`wrapRef`（所以下面的代码`wrap$`处都应该更改$
+
 **技术要点**：
 
   1. 抽奖概率设置
