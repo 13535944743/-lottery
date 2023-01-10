@@ -3,8 +3,6 @@
 
 [抽奖地址](https://13535944743.github.io/lottery/)
 
-$\color{red}{test `$`}$
-
 **技术要点**：
 
   1. 抽奖概率设置
